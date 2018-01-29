@@ -36,7 +36,6 @@ body {
   background-color: #B8C2C1;
   opacity: .85;
   overflow: hidden;
-  font-size: 1.2em;
 }
 
 #personal-bio span{
@@ -83,9 +82,9 @@ body {
   overflow: hidden;
   position: relative;
   border-radius: 50%;
-  width: 70%;
+  width: 60%;
   height: auto;
-  padding-top: 70%;
+  padding-top: 60%;
 }
 
 #skills-tile:hover, #experience-tile:hover, #languages-tile:hover {
@@ -108,7 +107,7 @@ body {
 }
 #skills-tile span, #experience-tile span, #languages-tile span {
   position: absolute;
-  bottom: 35%; 
+  bottom: 37%; 
   vertical-align: middle;
   width: 100%;
   text-align: center;
@@ -178,84 +177,91 @@ body {
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 }
-
+#personal-bio {
+  
+  font-size: 1.2em;
+}
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 951px) and (max-width: 1199px) {
+}
+
+#personal-bio {
+  
+  font-size: 1.2em;
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 950px) {
   /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 432px;
+  #personal-bio {
+    font-size: 1.07em;
   }
+
   /* End Home Page */
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
+   #header-nav {
+    background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
+    border-radius: 0;
+    border: 0;
+    background-size: 100% auto;
+    height: 200px;
+    margin-bottom: 280px;
   }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+  #personal-bio {
+    height: 250px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    background-color: #B8C2C1;
+    opacity: .5;
+    overflow: hidden;
   }
-  #header-nav {
-  background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
-  border-radius: 0;
-  border: 0;
-  background-size: 100% auto;
-  height: 350px;
+  #my-name {
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    clear: both;
+    font-size: 2.1em;
   }
 
   /* End Header */
-
-  /* Footer */
-  .panel-footer section {
-    margin-bottom: 30px;
+  #skills-tile span, #experience-tile span, #languages-tile span {
+    position: absolute;
+    bottom: 40%;
+    vertical-align: middle;
+    width: 100%;
     text-align: center;
-  }
-  .panel-footer section:nth-child(3) {
-    margin-bottom: 0; /* margin already exists on the whole row */
-  }
-  .panel-footer section hr {
-    width: 50%;
-  }
-  /* End Footer */
-
-  /* Home Page */
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
-  #menu-tile, #specials-tile {
-    width: 360px;
-    margin: 0 auto 15px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    color: #fff;
   }
 
-  .menu-item-photo {
-    margin-right: auto;
+  #skills-tile, #experience-tile, #languages-tile {
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    width: 75%;
+    height: auto;
+    padding-top: 75%;
   }
-  .menu-item-tile .menu-item-price {
-    text-align: center;
-  }
-  .menu-item-description {
-    text-align: center;;
-  }
+ 
 }
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   /* Header */
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
-  }
+  
   #header-nav {
     background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
     border-radius: 0;
@@ -299,14 +305,14 @@ body {
     color: #fff;
   }
 
-  
-
-  .col-xxs-12 {
+  #skills-tile, #experience-tile, #languages-tile {
+    margin-bottom: 15px;
+    overflow: hidden;
     position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
+    border-radius: 50%;
     width: 100%;
+    height: auto;
+    padding-top: 100%;
   }
+  
 }
