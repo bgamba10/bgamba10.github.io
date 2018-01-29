@@ -181,6 +181,9 @@ body {
   
   font-size: 1.2em;
 }
+#descrip{
+  font-size: 1.1em;
+}
 /********** Medium devices only **********/
 @media (min-width: 951px) and (max-width: 1199px) {
 }
@@ -314,5 +317,10 @@ body {
     height: auto;
     padding-top: 100%;
   }
-  
+
+  .panel-footer {
+    margin: 0;
+    padding: 10px;
+  }
+    
 }
