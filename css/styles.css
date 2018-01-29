@@ -1,0 +1,314 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #fff;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
+  border-radius: 0;
+  border: 0;
+  background-size: 100% auto;
+  height: 400px;
+}
+
+#my-name {
+  margin-top: 60px;
+  margin-left: 15px;
+  color: #000;
+  font-weight: bold;
+  position: absolute;
+  right: 50px;
+  clear: both;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 3em;
+}
+
+#personal-bio {
+  height: 60%;
+  width: 50%;
+  padding: 20px;
+  position: absolute;
+  right: 50px;
+  top: 130px;
+  background-color: #B8C2C1;
+  opacity: .85;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+
+#personal-bio span{
+  color: #000;
+  width: 100%;
+  text-align: justify;
+  
+}
+
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  
+  padding-top: 350px;
+  padding-bottom: 30px;
+  background-color: #9E614E;
+  opacity: .7;
+  border-top: 0;
+  width: 100%;
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
+}
+.panel-footer div.row {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+#contact-me > span{
+  font-size: 1.3em;
+}
+
+#quote {
+  text-align: center;
+  font-family: 'Arima Madurai';
+  font-size: 1.2em;
+}
+/* END FOOTER */
+
+
+/* HOME PAGE */
+#skills-tile, #experience-tile, #languages-tile {
+  margin-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
+}
+
+#skills-tile:hover, #experience-tile:hover, #languages-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#skills-tile {
+  background: #9BE4EF;
+  opacity: .8;
+  background-position: center;
+}
+#experience-tile {
+  background: #E87471;
+  opacity: .8;
+  background-position: center;
+}
+#languages-tile {
+  background: #A2EBD9;
+  opacity: .8;
+  background-position: center;
+}
+#skills-tile span, #experience-tile span, #languages-tile span {
+  position: absolute;
+  bottom: 45%; 
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #fff;
+}
+#skills div.row, #experience div.row, #languages div.row{
+  margin-bottom: 300px;
+}
+
+#skills, #experience, #languages {
+  margin: 0 -9999rem; 
+  /* add back negative margin value */
+  padding: 3rem 9999rem;
+}
+#skills{
+  background: rgba(155,228,239,0.4); 
+}
+#experience{
+  background: rgba(232,116,113,0.4); 
+}
+#languages{
+  background: rgba(162,235,217,0.4); 
+}
+
+#skills h2, #experience h2, #languages h2{
+  color: black;
+  text-align: center;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 3em;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+#skills h3, #languages h3{
+  color: black;
+  text-align: center;
+}
+
+#experience h3{
+  color: black;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#skills p, #experience p, #languages p{
+  color: black;
+  text-align: center;
+}
+
+#volunteering p{
+  margin-top: 20px;
+  text-align: center;
+}
+
+#resaltar{
+  font-weight: bold;
+}
+
+/* END HOME PAGE */
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  #header-nav {
+  background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
+  border-radius: 0;
+  border: 0;
+  background-size: 100% auto;
+  height: 350px;
+  }
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  #header-nav {
+    background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
+    border-radius: 0;
+    border: 0;
+    background-size: 100% auto;
+    height: 200px;
+    margin-bottom: 340px;
+  }
+  #personal-bio {
+    height: 315px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    background-color: #B8C2C1;
+    opacity: .5;
+    overflow: hidden;
+  }
+  #my-name {
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    clear: both;
+    font-size: 2.1em;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #skills-tile span, #experience-tile span, #languages-tile span {
+    position: absolute;
+    bottom: 40%;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    font-size: .8em;
+    text-transform: capitalize;
+    color: #fff;
+  }
+
+  
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
