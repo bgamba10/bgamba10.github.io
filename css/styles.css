@@ -50,15 +50,13 @@ body {
 /* FOOTER */
 .panel-footer {
   
-  padding-top: 350px;
+  padding-top: 30px;
   padding-bottom: 30px;
   background-color: #9E614E;
   opacity: .7;
   border-top: 0;
   width: 100%;
-  margin: 0 -9999rem;
-  /* add back negative margin value */
-  padding: 0.25rem 9999rem;
+
 }
 .panel-footer div.row {
   margin-bottom: 30px;
@@ -77,14 +75,15 @@ body {
 
 
 /* HOME PAGE */
+
 #skills-tile, #experience-tile, #languages-tile {
-  margin-bottom: 15px;
   overflow: hidden;
   position: relative;
   border-radius: 50%;
   width: 60%;
   height: auto;
   padding-top: 60%;
+  margin: 0 auto 15px;
 }
 
 #skills-tile:hover, #experience-tile:hover, #languages-tile:hover {
@@ -115,14 +114,10 @@ body {
   text-transform: capitalize;
   color: #fff;
 }
-#skills div.row, #experience div.row, #languages div.row{
-  margin-bottom: 300px;
-}
 
 #skills, #experience, #languages {
-  margin: 0 -9999rem; 
-  /* add back negative margin value */
-  padding: 3rem 9999rem;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 #skills{
   background: rgba(155,228,239,0.4); 
@@ -139,7 +134,6 @@ body {
   text-align: center;
   font-family: 'Signika Negative', sans-serif;
   font-size: 3em;
-  padding-top: 10px;
   margin-top: 10px;
 }
 
@@ -322,5 +316,5 @@ body {
     margin: 0;
     padding: 10px;
   }
-    
+  
 }
