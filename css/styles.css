@@ -49,7 +49,7 @@ body {
 
 /* FOOTER */
 .panel-footer {
-  
+
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #9E614E;
@@ -62,14 +62,33 @@ body {
   margin-bottom: 30px;
   margin-top: 40px;
 }
-#contact-me > span{
+#contact-me span{
   font-size: 1.3em;
+}
+
+#contact-me a:hover{
+  color: #cccccc;
+}
+
+#contact-me a:link{
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact-me a:visited{
+  text-decoration: none;
+  color: #A7B6EA;
 }
 
 #quote {
   text-align: center;
   font-family: 'Arima Madurai';
   font-size: 1.2em;
+}
+
+#freepik a:link, #freepik a:visited{
+  text-decoration: none;
+  color: #fff;
 }
 /* END FOOTER */
 
@@ -162,14 +181,30 @@ body {
   text-align: center;
 }
 
+#andes{
+  width: 8%;
+}
+
 #volunteering p{
   margin-top: 1px;
   margin-bottom: 5px;
   text-align: center;
 }
 
+#volunteering img{
+  width: 6%;
+}
+
 #resaltar{
   font-weight: bold;
+}
+
+#languages img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  opacity: .7;
 }
 
 /* END HOME PAGE */
@@ -180,7 +215,7 @@ body {
 @media (min-width: 1200px) {
 }
 #personal-bio {
-  
+
   font-size: 1.2em;
 }
 #descrip{
@@ -191,7 +226,7 @@ body {
 }
 
 #personal-bio {
-  
+
   font-size: 1.2em;
 }
 
@@ -208,7 +243,7 @@ body {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-   #header-nav {
+  #header-nav {
     background: #000000 url('../images/fotoo.jpeg') 50% 50% no-repeat;
     border-radius: 0;
     border: 0;
@@ -259,7 +294,7 @@ body {
     height: auto;
     padding-top: 75%;
   }
- 
+
 }
 
 
