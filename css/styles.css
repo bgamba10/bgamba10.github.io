@@ -66,7 +66,7 @@ body {
   font-size: 1.3em;
 }
 
-#contact-me a:hover{
+#contact-me a:hover, #backTop a:hover{
   color: #cccccc;
 }
 
@@ -86,10 +86,19 @@ body {
   font-size: 1.2em;
 }
 
-#freepik a:link, #freepik a:visited{
+#freepik a:link, #freepik a:visited, #backTop a:link, #backTop a:visited{
   text-decoration: none;
   color: #fff;
 }
+
+#backTop{
+  float: right;
+}
+
+#backTop span{
+  font-size: 3em;
+}
+
 
 /* END FOOTER */
 

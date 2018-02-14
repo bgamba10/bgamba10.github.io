@@ -1,10 +1,10 @@
 "use-strict";
 
 $('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 900);
-    return false;
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 900);
+    return false;
 });
 
 $('.makeImageBigger').hover(bigger, backToOriginal);
