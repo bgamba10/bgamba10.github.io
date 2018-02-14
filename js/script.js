@@ -1,15 +1,17 @@
+"use-strict";
+
 $('a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
-    }, 800);
+    }, 900);
     return false;
 });
 
-$('.resizableImage').hover(makeBigger, returnToOriginalSize);
+$('.makeImageBigger').hover(bigger, backToOriginal);
 
-function makeBigger() {
+function bigger() {
     $(this).css({height: '+=10%', width: '+=10%'});
 }
-function returnToOriginalSize() {
+function backToOriginal() {
     $(this).css({height: "", width: ""});
 }
